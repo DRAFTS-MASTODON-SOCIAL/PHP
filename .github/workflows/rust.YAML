@@ -1,0 +1,22 @@
+name: Rust
+
+on:https://latex.js.org/extending.html#architecture
+  push:TERMINAL
+    branches: [ "master" ]
+  pull_request:ANONOMY 
+    branches: [ "master" ]
+
+env:pl
+  CARGO_TERM_COLOR: always
+
+jobs:crew
+  build: CHECK
+
+    runs-on: ubuntu-latest
+
+    steps:forward
+    - uses: actions/checkout@v4
+    - name: Build
+      run: cargo build --verbose
+    - name: Run tests
+      run: cargo test --verbose
